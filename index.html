@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>is your birthday Lucky..?</title>
+    <meta charset="UTF-8" />
+    <link href="./src/styles.css" rel="stylesheet/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <h2 class="main-header">is your birthday Lucky...🤔?</h2>
+      <form id="lucky-form">
+        <label for="birthday-input">Date of Birth:</label><br />
+        <input id="birthday-input" class="input" type="Date" required />
+        <br />
+        <label for="lucky-number">Number:</label>
+        <br />
+        <input
+          id="number-input"
+          placeholder="Enter your lucky number"
+          class="input"
+          type="number"
+          min="0"
+          required
+        />
+        <br />
+        <button type="submit" id="luck-button" value="Check your luck">
+          Check your luck
+        </button>
+      </form>
+      <div class="output"></div>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>
